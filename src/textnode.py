@@ -1,18 +1,11 @@
 from enum import Enum
 
+
 class TextType(Enum):
-    '''
-    Normal text
-**Bold text**
-_Italic text_
-`Code text`
-Links, in this format: [anchor text](url)
-Images, in this format: ![alt text](url)
-    '''
-    NORMAL_TEXT = "normal"
-    BOLD_TEXT = "bold"
-    ITALIC_TEXT = "italic"
-    CODE_TEXT = "code"
+    NORMAL = "normal"
+    BOLD = "bold"
+    ITALIC = "italic"
+    CODE = "code"
     LINK = "link"
     IMAGE = "image"
 
