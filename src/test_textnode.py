@@ -11,7 +11,7 @@ class TestTextNode(unittest.TestCase):
 
     def test_repr(self):
         node = TextNode("This is a text node", TextType.BOLD)
-        self.assertEqual(repr(node), "TextNode(This is a text node, bold, None)")
+        self.assertEqual(repr(node), "TextNode(This is a text node, b, None)")
 
     def test_eq_with_url(self):
         node = TextNode("This is a text node", TextType.BOLD, "https://www.example.com")
@@ -20,7 +20,7 @@ class TestTextNode(unittest.TestCase):
 
     def test_repr_with_url(self):
         node = TextNode("This is a text node", TextType.BOLD, "https://www.example.com")
-        self.assertEqual(repr(node), "TextNode(This is a text node, bold, https://www.example.com)")
+        self.assertEqual(repr(node), "TextNode(This is a text node, b, https://www.example.com)")
 
     def test_eq_with_different_url(self):
         node = TextNode("This is a text node", TextType.BOLD, "https://www.example.com")
