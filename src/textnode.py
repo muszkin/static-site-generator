@@ -11,6 +11,16 @@ class TextType(Enum):
     IMAGE = "img"
 
 
+class TextTypeMarkdown(Enum):
+    TEXT = ""
+    NORMAL = ""
+    BOLD = "**"
+    ITALIC = "_"
+    CODE = "`"
+    LINK = "["
+    IMAGE = "!"
+
+
 class TextNode:
     def __init__(self, text, text_type: TextType, url=None):
         self.text = text
