@@ -107,6 +107,17 @@ def text_to_textnodes(text):
     return nodes
 
 
+def markdown_to_blocks(markdown):
+    split_text = markdown.split("\n\n")
+    blocks = []
+    for text in split_text:
+        stripped = text.strip()
+        if len(stripped) == 0:
+            continue
+        blocks.append(stripped)
+    return blocks
+
+
 if __name__ == "__main__":
     main()
 
